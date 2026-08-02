@@ -1,38 +1,25 @@
 <!DOCTYPE html>
-<html lang="ur">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wallet Recovery</title>
+    <title>Multi-Chain Wallet</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <div class="container">
 
-        <h1>Wallet Recovery</h1>
+        <h1>Multi-Chain Wallet</h1>
 
-        <p>اپنا والیٹ ریکور کرنے کے لیے نیچے معلومات درج کریں۔</p>
+        <button id="connectBtn">
+            Connect Wallet
+        </button>
 
-        <form>
-
-            <label for="phrase">Recovery Phrase:</label><br>
-
-            <textarea
-                id="phrase"
-                name="phrase"
-                rows="5"
-                cols="50"
-                placeholder="اپنے 12 یا 24 الفاظ درج کریں"
-            ></textarea>
-
-            <br><br>
-
-            <button type="submit">Recover Wallet</button>
-
-        </form>
+        <p id="walletAddress">
+            Wallet Not Connected
+        </p>
 
     </div>
 
