@@ -1,10 +1,6 @@
-const button = document.querySelector("button");
-const phrase = document.querySelector("#phrase");
+const connectBtn = document.getElementById("connectBtn");
+const walletAddress = document.getElementById("walletAddress");
 
-button.addEventListener("click", function (event) {
-    event.preventDefault();
-
-    const recoveryPhrase = phrase.value;
-
-    alert("آپ نے لکھا:\n" + recoveryPhrase);
+connectBtn.addEventListener("click", () => {
+    walletAddress.innerText = "Connecting Wallet...";
 });
